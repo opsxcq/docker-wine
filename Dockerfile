@@ -2,7 +2,8 @@ FROM strm/vnc
 
 MAINTAINER opsxcq <opsxcq@thestorm.com.br>
 
-RUN apt-get update && \
+RUN dpkg --add-architecture i386 && \
+    apt-get update && \
     apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
     wget \
