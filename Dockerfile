@@ -1,6 +1,6 @@
 FROM strm/vnc
 
-MAINTAINER opsxcq <opsxcq@thestorm.com.br>
+LABEL maintainer "opsxcq@strm.sh"
 
 RUN dpkg --add-architecture i386 && \
     apt-get update && \
